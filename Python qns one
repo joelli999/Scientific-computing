@@ -1,0 +1,17 @@
+import matplotlib.pyplot as alt
+
+# Temperature readings over a week
+from curses.ascii import alt
+
+
+temperatures = [20, 22, 19, 23, 21, 24, 20]
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+# Plotting the line graph
+alt.plot(days, temperatures, marker='o', linestyle='-', color='blue')
+alt.title('Temperature Readings Over a Week')
+alt.xlabel('Day of the Week')
+alt.ylabel('Temperature (°C)')
+alt.grid(True)
+alt.tight_layout()
+alt.show()
