@@ -1,0 +1,15 @@
+# Initialize variables
+start = 5
+difference = 3
+terms = 8
+
+# Generate and print the arithmetic sequence
+sequence = []
+
+for i in range(terms):
+    term = start + i * difference
+    sequence.append(term)
+
+# Output the sequence
+print("Arithmetic Sequence:")
+print(sequence)
