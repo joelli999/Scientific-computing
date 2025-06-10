@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the square region
+x = np.linspace(0, 1, 100)
+y = np.linspace(0, 1, 100)
+
+# Create meshgrid for surface calculation
+X, Y = np.meshgrid(x, y)
+
+# Compute Z = x^2 + y^2
+Z = X**2 + Y**2
+
+# Plotting the surface
+fig = plt.figure(figsize=(8, 6))
+ax = fig.add_subplot(111, projection='3d')
+
+# Create the surface plot
+surf = ax.plot_surface(X, Y, Z, cmap='viridis')
